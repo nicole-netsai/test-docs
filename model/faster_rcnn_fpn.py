@@ -2,8 +2,8 @@ from torch import nn
 from torchvision.models.detection.backbone_utils import resnet_fpn_backbone
 from torch.hub import load_state_dict_from_url
 
-from .utils import pooling
-from .utils.class_head import ClassificationHead
+from utils import pooling
+from utils.class_head import ClassificationHead
 
 
 class FasterRCNN_FPN(nn.Module):
